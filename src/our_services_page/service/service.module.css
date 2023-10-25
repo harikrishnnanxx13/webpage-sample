@@ -1,0 +1,35 @@
+.service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+}
+
+.service .image {
+    width: 100%;
+}
+
+.service .text_grid_cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service .text_grid_cell .text_area {
+    max-width: 360px;
+}
+
+.service .text_grid_cell .text_area .badge_container {
+    background-color: #1f1340;
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 512px) {
+    .service {
+        grid-template-columns: 1fr;
+    }
+}
